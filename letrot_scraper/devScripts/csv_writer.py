@@ -2,17 +2,20 @@ import json
 
 
 JSON_FILENAME = 'result2-1'
-CSV_FILENAME = 'courses'
+CSV_FILENAME = 'Course'
 data_to_write = json.load(open(f'devFiles/{JSON_FILENAME}.json','r'))
 
 
+with open(f'results/{CSV_FILENAME}.csv','w') as fh:
+    fh.write('')
+
 attrs = [
-    'Nom',
-    'Prix',
-    'Distance',
-    'Mode course',
-    'Conditions',
-    'Depart'
+    'nom-course',
+    'prix-course',
+    'distance-course',
+    'condition-course',
+    'mode-course',
+    'depart-course',
 ]
 
 
